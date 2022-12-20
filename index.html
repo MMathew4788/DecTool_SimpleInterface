@@ -6,16 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet">
     <title>DecTool</title>
 </head>
 
 <body>
+    <!--Nav Bar-->
+    <nav class="flex items-center justify-between font-bold p-6 bg-black">
+        <!-- Logo -->
+        <div class="text-goldenbrown mx-auto md:mx-12">
+            <p class="font-Plaster text-3xl">DecTool</p></div>
+        <!-- Menu -->
+        <div class="hidden text-white hover: md:flex md:flex-row space-x-5 md:mr-12">
+            <!--Item-1-->
+            <div class="group h-5">
+                <a href="#">About</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <!--Item-2-->
+            <div class="group h-5">
+                <a href="#">Forum</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <!--Item-3-->
+            <div class="group h-5">
+                <a href="#">Products</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <!--Item-4-->
+            <div class="group h-5">
+                <a href="#">Support</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+        </div>
+        <!-- Hamburger Button -->
+        <div class="md:hidden">
+            <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+
+    </nav>
     <!-- Hero Section -->
     <section>
-        <div class="flex flex-col mx-auto mb-40 pt-16 align-middle justify-center item-center">
+        <div class="flex flex-col mx-auto mb-40 pt-6 align-middle justify-center item-center">
             <img src="images/logo.svg" alt="" class="mx-auto my-16" />
 
-            <h1 class="text-3xl mx-6 md:mx-auto text-center">A decision making tool to aid you while making decision</h1>
+            <h1 class="text-3xl mx-6 md:mx-auto text-center">A decision making tool to aid you while making decision
+            </h1>
 
             <p class="mb-10 text-2xl mx-auto text-amber-600 text-center pt-5">
                 DecTool allows you to evaluate options or alternative under multiple criteria<br>
@@ -84,7 +127,7 @@
 
     <footer class="bg-black">
         <!-- Container -->
-        <div class="container max-w-6xl py-10 mx-auto">
+        <div class="max-w-6xl py-10 mx-auto">
             <!-- Footer Flex Container -->
             <div
                 class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start">
@@ -92,7 +135,7 @@
                 <div class="flex flex-col md:flex-row items-center space-y-8 md:items-start md:space-y-4">
                     <!-- Logo -->
                     <div class="h-8">
-                        <img src="images/logo.svg" alt="" class="w-16 md:ml-3" />
+                        <img src="images/logo.svg" alt="" class="w-16 md:ml-3 md:mr-3" />
                     </div>
                     <!-- Menu Container -->
                     <div
@@ -104,20 +147,15 @@
                         </div>
                         <!-- Item 2 -->
                         <div class="h-10 group">
-                            <a href="#">Careers</a>
+                            <a href="#">Forum</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                         <!-- Item 3 -->
                         <div class="h-10 group">
-                            <a href="#">Events</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
-                        <!-- Item 4 -->
-                        <div class="h-10 group">
                             <a href="#">Products</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
-                        <!-- Item 5 -->
+                        <!-- Item 4 -->
                         <div class="h-10 group">
                             <a href="#">Support</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
@@ -132,32 +170,32 @@
                         <!-- Icon 1 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="images/icon-facebook.svg" alt="" class="h-6" />
+                                <img src="images/icon-facebook.svg" alt="" class="h-6 ficon"/>
                             </a>
                         </div>
                         <!-- Icon 2 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="images/icon-twitter.svg" alt="" class="h-6" />
+                                <img src="images/icon-twitter.svg" alt="" class="h-6 ticon"/>
                             </a>
                         </div>
                         <!-- Icon 3 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="images/icon-pinterest.svg" alt="" class="h-6" />
+                                <img src="images/icon-pinterest.svg" alt="" class="h-6 picon" />
                             </a>
                         </div>
                         <!-- Icon 4 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="images/icon-instagram.svg" alt="" class="h-6" />
+                                <img src="images/icon-youtube.svg" alt="" class="h-6 yicon" />
                             </a>
                         </div>
                     </div>
 
                     <!-- Copy -->
                     <div class="font-bold">
-                        &copy; 2022 DevTool. All Rights Reserved
+                        &copy; 2022 DecTool. All Rights Reserved
                     </div>
                 </div>
             </div>
