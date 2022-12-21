@@ -10,16 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet">
     <title>DecTool</title>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <!--Nav Bar-->
-    <nav class="flex items-center justify-between font-bold p-6 bg-black">
+    <nav class="flex md:flex-row mx-auto p-6 bg-black justify-between md:justify-between">
         <!-- Logo -->
-        <div class="text-goldenbrown mx-auto md:mx-12">
-            <p class="font-Plaster text-3xl">DecTool</p></div>
+        <div class="text-goldenbrown mx-auto md:mx-0">
+            <p class="font-Plaster text-3xl">DecTool</p>
+        </div>
         <!-- Menu -->
-        <div class="hidden text-white hover: md:flex md:flex-row space-x-5 md:mr-12">
+        <div class="hidden md:flex md:flex-row items-center font-semibold text-lg text-white space-x-5">
             <!--Item-1-->
             <div class="group h-5">
                 <a href="#">About</a>
@@ -43,15 +45,25 @@
         </div>
         <!-- Hamburger Button -->
         <div class="md:hidden">
-            <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+            <button id="menu-btn" type="button" 
+            class="z-40 block hamburger md:hidden focus:outline-none">
                 <span class="hamburger-top"></span>
                 <span class="hamburger-middle"></span>
                 <span class="hamburger-bottom"></span>
             </button>
         </div>
-
-
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="menu"
+        class="absolute top-0 left-0 hidden flex-col self-end w-full min-h-fit 
+        pt-20 pb-5 pl-12 space-y-3 text-lg text-white font-semibold bg-black">
+        <a href="#" class="hover:text-goldenbrown">About</a>
+        <a href="#" class="hover:text-goldenbrown">Forum</a>
+        <a href="#" class="hover:text-goldenbrown">Products</a>
+        <a href="#" class="hover:text-goldenbrown">Support</a>
+    </div>
+
     <!-- Hero Section -->
     <section>
         <div class="flex flex-col mx-auto mb-40 pt-6 align-middle justify-center item-center">
@@ -139,7 +151,7 @@
                     </div>
                     <!-- Menu Container -->
                     <div
-                        class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
+                        class="flex flex-col items-center space-y-2 pt-3 md:pt-0 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
                         <!-- Item 1 -->
                         <div class="h-10 group">
                             <a href="#">About</a>
@@ -170,13 +182,13 @@
                         <!-- Icon 1 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="images/icon-facebook.svg" alt="" class="h-6 ficon"/>
+                                <img src="images/icon-facebook.svg" alt="" class="h-6 ficon" />
                             </a>
                         </div>
                         <!-- Icon 2 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="images/icon-twitter.svg" alt="" class="h-6 ticon"/>
+                                <img src="images/icon-twitter.svg" alt="" class="h-6 ticon" />
                             </a>
                         </div>
                         <!-- Icon 3 -->
