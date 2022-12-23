@@ -6,18 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet"> 
     <title>DecTool</title>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
+    <!--Nav Bar-->
+    <nav class="flex md:flex-row mx-auto p-6 bg-black justify-between md:justify-between">
+        <!-- Logo -->
+        <div class="text-goldenbrown mx-auto md:mx-0">
+            <p class="font-Plaster text-3xl">DecTool</p>
+        </div>
+        <!-- Menu -->
+        <div class="hidden md:flex md:flex-row items-center font-semibold text-lg text-white space-x-5">
+            <!--Item-1-->
+            <div class="group h-5">
+                <a href="#">About</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <!--Item-2-->
+            <div class="group h-5">
+                <a href="#">Forum</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <!--Item-3-->
+            <div class="group h-5">
+                <a href="#">Products</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <!--Item-4-->
+            <div class="group h-5">
+                <a href="#">Support</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+        </div>
+        <!-- Hamburger Button -->
+        <div class="md:hidden">
+            <button id="menu-btn" type="button" 
+            class="z-40 block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="menu"
+        class="absolute top-0 left-0 hidden flex-col self-end w-full min-h-fit 
+        pt-20 pb-5 pl-12 space-y-3 text-lg text-white font-semibold bg-black">
+        <a href="#" class="hover:text-goldenbrown">About</a>
+        <a href="#" class="hover:text-goldenbrown">Forum</a>
+        <a href="#" class="hover:text-goldenbrown">Products</a>
+        <a href="#" class="hover:text-goldenbrown">Support</a>
+    </div>
+
     <!-- Hero Section -->
     <section>
-        <div class="flex flex-col mx-auto mb-40 pt-16 align-middle justify-center item-center">
-            <img src="images/logo.svg" alt="" class="mx-auto my-16" />
+        <div class="flex flex-col mx-auto mb-40 pt-6 md:pt-3 align-middle justify-center item-center">
+            <img src="images/logo.svg" alt="" class="mx-auto md:my-12 my-16" />
 
-            <h1 class="text-3xl mx-6 md:mx-auto text-center">A decision making tool to aid you while making decision</h1>
+            <h1 class="text-4xl font-serif md:w-1/2 mx-6 md:mx-auto text-center px-4">A decision making tool to aid you while making decision
+            </h1>
 
-            <p class="mb-10 text-2xl mx-auto text-amber-600 text-center pt-5">
+            <p class="mb-10 text-2xl mx-auto text-amber-600 text-center mt-4 px-4">
                 DecTool allows you to evaluate options or alternative under multiple criteria<br>
                 You can access your DecTool on all your devices
             </p>
@@ -26,11 +81,11 @@
             <div
                 class="flex flex-col justify-center md:mx-auto space-y-6 text-xl text-center md:flex-row md:space-y-0 md:space-x-4">
                 <a href="#"
-                    class="p-4 px-8 mx-auto rounded-full shadow-lg bg-lightOlive duration-200 hover:bg-olive hover:text-white">
+                    class="p-4 px-8 mx-auto font-semibold rounded-full shadow-lg bg-lightOlive duration-200 hover:bg-olive hover:text-white">
                     Download for iOS
                 </a>
                 <a href="#"
-                    class="p-4 px-8 mx-auto rounded-full shadow-lg bg-lightGoldenbrown duration-200 hover:bg-goldenbrown hover:text-white">
+                    class="p-4 px-8 mx-auto font-semibold rounded-full shadow-lg bg-lightGoldenbrown duration-200 hover:bg-goldenbrown hover:text-white">
                     Download for Mac
                 </a>
             </div>
@@ -56,21 +111,21 @@
                     <!-- Item 1 -->
                     <div class="text-left">
                         <h5>Easy Decision</h5>
-                        <p class="max-w-md text-grayishBlue">
+                        <p class="max-w-md text-goldenbrown">
                             Easily make decision under conflicting criteria, using the DevTool.
                         </p>
                     </div>
                     <!-- Item 2 -->
                     <div>
                         <h5>iCloud Sync</h5>
-                        <p class="max-w-md text-grayishBlue">
+                        <p class="max-w-md text-goldenbrown">
                             Instantly saves and syncs snippets across all your devices.
                         </p>
                     </div>
                     <!-- Item 3 -->
                     <div>
                         <h5>Completely History</h5>
-                        <p class="max-w-md text-grayishBlue">
+                        <p class="max-w-md text-goldenbrown">
                             Retrieve any snippets from the first moment you started using
                             the app.
                         </p>
@@ -84,7 +139,7 @@
 
     <footer class="bg-black">
         <!-- Container -->
-        <div class="container max-w-6xl py-10 mx-auto">
+        <div class="max-w-6xl py-10 mx-auto">
             <!-- Footer Flex Container -->
             <div
                 class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start">
@@ -92,11 +147,11 @@
                 <div class="flex flex-col md:flex-row items-center space-y-8 md:items-start md:space-y-4">
                     <!-- Logo -->
                     <div class="h-8">
-                        <img src="images/logo.svg" alt="" class="w-16 md:ml-3" />
+                        <img src="images/logo.svg" alt="" class="w-16 md:ml-3 md:mr-3" />
                     </div>
                     <!-- Menu Container -->
                     <div
-                        class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
+                        class="flex flex-col items-center space-y-2 pt-3 md:pt-0 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
                         <!-- Item 1 -->
                         <div class="h-10 group">
                             <a href="#">About</a>
@@ -104,20 +159,15 @@
                         </div>
                         <!-- Item 2 -->
                         <div class="h-10 group">
-                            <a href="#">Careers</a>
+                            <a href="#">Forum</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
                         <!-- Item 3 -->
                         <div class="h-10 group">
-                            <a href="#">Events</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-                        </div>
-                        <!-- Item 4 -->
-                        <div class="h-10 group">
                             <a href="#">Products</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
                         </div>
-                        <!-- Item 5 -->
+                        <!-- Item 4 -->
                         <div class="h-10 group">
                             <a href="#">Support</a>
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
@@ -132,32 +182,32 @@
                         <!-- Icon 1 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="images/icon-facebook.svg" alt="" class="h-6" />
+                                <img src="images/icon-facebook.svg" alt="" class="h-6 ficon" />
                             </a>
                         </div>
                         <!-- Icon 2 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="images/icon-twitter.svg" alt="" class="h-6" />
+                                <img src="images/icon-twitter.svg" alt="" class="h-6 ticon" />
                             </a>
                         </div>
                         <!-- Icon 3 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="images/icon-pinterest.svg" alt="" class="h-6" />
+                                <img src="images/icon-pinterest.svg" alt="" class="h-6 picon" />
                             </a>
                         </div>
                         <!-- Icon 4 -->
                         <div class="h-8 group">
                             <a href="#">
-                                <img src="images/icon-instagram.svg" alt="" class="h-6" />
+                                <img src="images/icon-youtube.svg" alt="" class="h-6 yicon" />
                             </a>
                         </div>
                     </div>
 
                     <!-- Copy -->
                     <div class="font-bold">
-                        &copy; 2022 DevTool. All Rights Reserved
+                        &copy; 2022 DecTool. All Rights Reserved
                     </div>
                 </div>
             </div>

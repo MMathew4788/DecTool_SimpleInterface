@@ -15,7 +15,8 @@ module.exports = {
       lightGoldenbrown: 'rgb(221, 161, 94)',
     },
     fontFamily: {
-      sans: ['Bai Jamjuree', 'sans-serif'],
+      'Plaster':['"Plaster"', 'cursive'],
+      
     },
 },
   },
