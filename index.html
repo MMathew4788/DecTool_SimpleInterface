@@ -13,42 +13,42 @@
     <script src="js/script.js" defer></script>
 </head>
 <!--Nav Bar-->
-<nav class="flex md:flex-row mx-auto p-6 bg-black justify-between md:justify-between">
-    <!-- Logo -->
-    <div class="text-goldenbrown mx-auto md:mx-0">
-        <p class="font-Plaster text-3xl">DecTool</p>
-    </div>
-    <!-- Menu -->
-    <div class="hidden md:flex md:flex-row items-center font-semibold text-lg text-white space-x-5">
-        <!--Item-1-->
-        <div class="group h-5">
-            <a href="#">About</a>
-            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+<nav class="flex md:flex-row lg:px-20 md:px-12 mx-auto p-6 bg-black justify-between md:justify-between">
+        <!-- Logo -->
+        <div class="text-goldenbrown mx-auto md:mx-0">
+            <p class="font-Plaster text-3xl">DecTool</p>
         </div>
-        <!--Item-2-->
-        <div class="group h-5">
-            <a href="#">Forum</a>
-            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        <!-- Menu -->
+        <div class="hidden md:flex md:flex-row items-center font-semibold text-lg text-white space-x-5">
+            <!--Item-1-->
+            <div class="group h-5">
+                <a href="#">About</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <!--Item-2-->
+            <div class="group h-5">
+                <a href="#">Forum</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <!--Item-3-->
+            <div class="group h-5">
+                <a href="#">Products</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
+            <!--Item-4-->
+            <div class="group h-5">
+                <a href="#">Support</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+            </div>
         </div>
-        <!--Item-3-->
-        <div class="group h-5">
-            <a href="#">Products</a>
-            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        <!-- Hamburger Button -->
+        <div class="md:hidden">
+            <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
         </div>
-        <!--Item-4-->
-        <div class="group h-5">
-            <a href="#">Support</a>
-            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-        </div>
-    </div>
-    <!-- Hamburger Button -->
-    <div class="md:hidden">
-        <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-        </button>
-    </div>
 </nav>
 
 <!-- Mobile Menu -->
@@ -62,28 +62,29 @@
 
 <!-- Hero Section -->
 <section>
-    <div class="flex flex-col mx-auto mb-40 pt-6 md:pt-3 align-middle justify-center item-center">
+    <div
+        class="flex flex-col mx-auto mb-40 pt-6 md:pt-32 lg:pt-10 lg:max-w-5xl md:max-w-2xl align-middle justify-center item-center">
         <img src="images/logo.svg" alt="" class="mx-auto md:my-12 my-16" />
 
-        <h1 class="text-4xl font-serif md:w-1/2 mx-6 md:mx-auto text-center px-4">A decision making tool to aid you
+        <h1 class="text-3xl md:text-4xl font-serif mx-6 md:mx-auto text-center px-4">A decision making tool to aid you
             while making decision
         </h1>
 
         <p class="mb-10 text-2xl mx-auto text-amber-600 text-center mt-4 px-4">
-            DecTool allows you to evaluate options or alternative under multiple criteria<br>
+            DecTool allows you to evaluate options or alternative under multiple criteria.<br>
             You can access your DecTool on all your devices
         </p>
 
         <!-- Button Container -->
         <div
-            class="flex flex-col justify-center md:mx-auto space-y-6 text-xl text-center md:flex-row md:space-y-0 md:space-x-4">
+            class="flex flex-col px-16 justify-center md:mx-auto space-y-6 text-xl text-center md:flex-row md:space-y-0 md:space-x-4 md:mb-36 md:mt-10 lg:mt-0 lg:mb-10">
             <a href="#"
-                class="p-4 px-8 mx-auto font-semibold rounded-full shadow-lg bg-lightOlive duration-200 hover:bg-olive hover:text-white">
+                class="p-4 px-8 min-w-full md:min-w-fit mx-auto font-semibold rounded-full shadow-lg bg-lightOlive duration-200 hover:bg-olive hover:text-white">
                 Download for iOS
             </a>
             <a href="#"
-                class="p-4 px-8 mx-auto font-semibold rounded-full shadow-lg bg-lightGoldenbrown duration-200 hover:bg-goldenbrown hover:text-white">
-                Download for Mac
+                class="p-4 px-8 min-w-full md:min-w-fit mx-auto font-semibold rounded-full shadow-lg bg-lightGoldenbrown duration-200 hover:bg-goldenbrown hover:text-white">
+                Download for Android
             </a>
         </div>
     </div>
@@ -92,12 +93,12 @@
 <!-- Feature Section -->
 <section>
     <!-- Feature Container -->
-    <div class="flex flex-col relative mx-auto max-w-6xl md:flex-row md:px-0">
+    <div class="flex flex-col relative mx-auto md:max-w-2xl lg:max-w-5xl md:flex-row md:px-0">
         <!-- Image -->
-        <img src="images/image-puzzle.jpg" alt="puzzle" class="md:m-3 mx-3 md:w-3/5" />
+        <img src="images/image-puzzle.jpg" alt="puzzle" class="md:m-3 mx-3 md:max-w-xl" />
 
         <!-- Text Container -->
-        <div class="mx-3 p-3 md:m-3 md:absolute md:right-0 md:min-w-max md:min-h-full 
+        <div class="mx-3 p-3 md:m-3 md:absolute md:right-0 md:ml-16 md:max-w-fit md:min-h-fit lg:min-h-full 
         md:mt-20 md:px-6 bg-lightGoldenbrown">
             <div class="flex flex-col md:my-10">
                 <div class="font-serif text-center md:text-left text-3xl max-w-lg">
@@ -106,22 +107,22 @@
 
                 <div class="font-normal">
                     <!-- Item 1 -->
-                    <div class="mt-5 text-center md:text-left text-2xl md:text-lg">
+                    <div class="mt-5 text-center md:text-left text-xl">
                         <h5 class="text-olive">Easy Decision</h5>
                         <p class="text-goldenbrown">
                             Easily make decision under conflicting criteria, using the DevTool.
                         </p>
                     </div>
                     <!-- Item 2 -->
-                    <div class="mt-5 text-center md:text-left text-2xl md:text-xl ">
+                    <div class="mt-5 text-center md:text-left text-xl ">
                         <h5 class="text-olive">Cloud Sync</h5>
                         <p class="text-goldenbrown">
                             Instantly saves your results and syncs results across all your devices.
                         </p>
                     </div>
                     <!-- Item 3 -->
-                    <div class="mt-5 text-center md:text-left text-2xl md:text-lg">
-                        <h5 class="text-olive">Completely History</h5>
+                    <div class="mt-5 text-center md:text-left text-xl">
+                        <h5 class="text-olive">Retrieve History</h5>
                         <p class="text-goldenbrown">
                             Retrieve all past analysis from the moment you started using
                             the app.
@@ -136,7 +137,7 @@
 <!--Testimonial Section-->
 <section>
     <!--Global Container-->
-    <div class="flex my-32 mx-auto justify-center max-w-6xl">
+    <div class="flex my-32 mx-auto justify-center md:max-w-3xl lg:max-w-5xl md:pt-20">
         <!--Grid Container-->
         <div class="text-white md:mt-20 grid grid-col-1 gap-4 mx-4 md:grid-cols-4 md:grid-row-2">
             <!--Box-1-->
@@ -153,7 +154,7 @@
                 <h4 class="p-3 text-left text-lg">Testimonial-2</h4>
                 <p class="p-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Repellendus sapiente voluptates consectetur magnam culpa.
-                    exercitationem saepe fugiat excepturi optio consequatur? 
+                    exercitationem saepe fugiat excepturi optio consequatur?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, in!
                 </p>
             </div>
@@ -183,7 +184,6 @@
                 <h4 class="p-3 text-left text-lg">Testimonial-5</h4>
                 <p class="p-3 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Repellendus sapiente voluptates consectetur magnam culpa.
-                    exercitationem saepe fugiat excepturi optio consequatur?
                 </p>
             </div>
         </div>
@@ -191,7 +191,7 @@
 </section>
 
 
-<footer class="bg-black">
+<footer class="bg-black md:pl-10">
     <!-- Container -->
     <div class="max-w-6xl py-10 mx-auto">
         <!-- Footer Flex Container -->
@@ -260,7 +260,7 @@
                 </div>
 
                 <!-- Copy -->
-                <div class="font-bold">
+                <div class="font-bold pr-5">
                     &copy; 2022 DecTool. All Rights Reserved
                 </div>
             </div>
